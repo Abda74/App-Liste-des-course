@@ -14,7 +14,7 @@ body{
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    background: #0b4b04;
+    background: #47e838;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 85%;
     height: 80%;
     background: white;
     border-radius: 15px;
@@ -61,21 +61,45 @@ h1{
     border-radius: 5px;
 }
 
+.formulaire2 input{
+    width: 10vw;
+}
+
 button{
-    width: 250px;
+    width: 140px;
     position: relative;
     top: 17px;
     background: #0b4b04;
     color: white;
 }
 
+#btnEntrer{
+    font-size: 1.1rem;
+}
+
+.buttonDelete{
+    color: #f61616;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: padding .3s ease-in-out, scale .3s ease-in-out;
+}
+
+.buttonDelete:hover{
+    color: white;
+    background: red;
+    padding: 0 2px;
+    scale: 1.2;
+}
+
 .courses{
     position: relative;
     top: 140px;
-    width: 52vw;
+    width: 62vw;
     height: 45vh;
     border-radius: 5px;
     overflow: scroll;
+
 }
 
 .total{
@@ -92,33 +116,67 @@ button{
 
 .addCourse{
     position: relative;
+    top: 60px;
     background: #0b4b04;
     display: flex;
     justify-content: space-around;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     margin: 10px 0;
     border-radius: 5px;
     transition: all .5s ease-in-out;
     animation: annimModal .5s ease-in;
-}
-
-.addCourse .prixCourse{
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 300px;
-    text-align: center;
-    font-size: 20px;
+    word-wrap: break-word;
 }
 
 .addCourse .nomCourse{
-    position: absolute;
-    top: 7px;
-    left: 120px;
+    transform: translateX(-40px);
+    width: 33%;
     text-align: center;
-    font-size: 20px;
 }
+
+.addCourse .prixCourse{
+    width: 15%;
+    text-align: end;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+}
+
+.check{
+    width: 15%;
+    background: red;
+    margin-right: 10px;
+}
+
+.prixUnitaire{
+    width: 15%;
+    text-align: end;
+}
+
+.plan{
+    width: 56vw;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: -65px;
+    background: white;
+}
+
+.plan ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plan li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 
 .modal {
     width: 65vw;
